@@ -36,7 +36,8 @@ var questions = {
 };
 inquirer_1.default.prompt(questions).then(function (selection) {
     var configFile = fs_1.readFileSync(path.join(process.cwd(), "./DOCS/examples", selection.config));
+    console.log("Writing " + selection.config + "...");
     fs_1.writeFileSync(path.join(process.cwd(), "./src", "docs.config.json"), configFile);
-    console.log(configFile);
+    console.log("Finished writing " + selection.config + "...");
 });
 //# sourceMappingURL=cli.js.map

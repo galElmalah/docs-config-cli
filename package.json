@@ -1,5 +1,7 @@
 {
-  "bin": "./dist/cli.js",
+  "bin": {
+    "docsc": "./dist/cli.js"
+  },
   "name": "docs-config-cli",
   "version": "1.0.0",
   "description": "",
