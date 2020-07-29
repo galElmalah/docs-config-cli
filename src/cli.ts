@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { readdirSync, writeFile, readFileSync, writeFileSync } from "fs";
 import * as path from "path";
 import inquirer from "inquirer";
